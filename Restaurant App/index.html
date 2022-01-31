@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./CSS/layout.css">
+    <link rel="stylesheet" href="./CSS/modal.css">
+    
+</head>
+<body>
+<div class="layout">
+    
+    <div class="tables-div">
+        <h3 class = "tables-heading">Tables</h3>
+        <input type="text" name="search-tables"  class = "search-table"  onchange="tableSearch();" onemptied="tableSearch();" placeholder="Search Table">
+        <div class="table-list" id = "tables"></div>
+    </div> 
+    <div class = "vertical-rule" ></div>
+    
+    <div class="menu-div">
+        <h3 class = "menu-heading">Menu</h3>
+        <input type="text" name="search-menu"  class = "search-menu" onchange="menuSearch();"  onemptied="menuSearch();"  placeholder="Search Menu... by Course , by food">
+        <div class="menu-items" id="menu"></div>
+    </div>
+
+</div>
+<script src="./JS/main.js"></script>    
+</body>
+</html>
+
+
